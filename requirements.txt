@@ -1,0 +1,36 @@
+# requirements.txt
+# 
+# Install all required dependencies for the multimodal_image_system.
+# Usage:
+#   python -m pip install --upgrade pip
+#   python -m pip install -r requirements.txt
+#
+# Note: If you prefer GPU-based FAISS or PyTorch, swap 'faiss-cpu' for 'faiss-gpu' 
+#       and ensure you have a compatible CUDA toolkit.
+
+# Core ML / Embeddings
+torch>=1.7.0
+torchvision>=0.8.0
+
+# FAISS for indexing (CPU version)
+faiss-cpu
+
+# CLIP directly from GitHub (must be installed via pip's VCS support)
+git+https://github.com/openai/CLIP.git
+
+# Data handling & utilities
+numpy
+Pillow
+
+# Web framework and front-end
+Flask
+streamlit
+requests
+itsdangerous==2.2   # Known working version for certain Flask combos
+
+# Tunnelling (if you plan to run locally and expose a port)
+#pyngrok
+
+# Kaggle / kagglehub (to automate dataset downloading)
+kagglehub
+
