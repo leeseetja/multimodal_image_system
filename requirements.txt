@@ -28,9 +28,6 @@ streamlit
 requests
 itsdangerous==2.2   # Known working version for certain Flask combos
 
-# Tunnelling (if you plan to run locally and expose a port)
-#pyngrok
-
 # Kaggle / kagglehub (to automate dataset downloading)
 kagglehub
 
