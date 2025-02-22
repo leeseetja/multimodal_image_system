@@ -108,11 +108,19 @@ python -m streamlit run ./scripts/run_frontend.py
 ---
 
 ## Running Tests
-To run tests go to /tests. You can run them with:
-```bash
-python -m pytest ./tests
-```
 
+This project uses [pytest](https://docs.pytest.org/) for testing. To run the tests:
+
+1. **Set up** your environment as described above (install dependencies, ensure Python is on your PATH).
+2. **(Windows OpenMP Conflict)** If you see an “OMP: Error #15” or similar, set an environment variable before running tests:
+   ```powershell
+   $Env:KMP_DUPLICATE_LIB_OK="TRUE"
+   ```
+3. There are three tests included for this project: `test_embeddings.py`, `test_index.py`, `test_api.py`.
+4. **Run pytest** from the project’s root directory:
+```bash
+python -m pytest --maxfail=1 --disable-warnings -q
+```
 ---
 
 ## Assumptions & Notes
