@@ -5,11 +5,6 @@ Description:
     This script automates downloading the required dataset from kaggle,
     storing it locally, and returning the path to the folder containing images.
 
-Usage:
-    python prepare_data.py
-        -or-
-    from prepare_data import download_data
-
 Notes:
     - Adjust the Kaggle dataset ID and subfolder path as necessary.
     - Requires 'kagglehub' or the Kaggle API, depending on your approach.

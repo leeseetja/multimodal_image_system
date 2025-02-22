@@ -1,5 +1,3 @@
-# scripts/build_index.py
-
 import os
 import faiss
 import numpy as np

@@ -1,5 +1,3 @@
-# scripts/run_api.py
-
 import os
 import torch
 import clip
@@ -14,7 +12,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 # Paths to your embeddings
-EMBEDDINGS_DIR = "embeddings"  # adjust if needed
+EMBEDDINGS_DIR = "embeddings"
 INDEX_PATH = os.path.join(EMBEDDINGS_DIR, "image_index.faiss")
 PATHS_FILE = os.path.join(EMBEDDINGS_DIR, "image_paths.txt")
 

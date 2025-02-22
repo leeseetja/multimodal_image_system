@@ -1,5 +1,3 @@
-# scripts/generate_embeddings.py
-
 import os
 import random
 import torch

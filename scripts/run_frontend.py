@@ -1,11 +1,9 @@
-# scripts/run_frontend.py
-
 import streamlit as st
 import requests
 import os
 
 def main():
-    st.title("Multi-Modal Image Retrieval Demo")
+    st.title("Multi-Modal Image Retrieval by Lesetja Lekoloane for SBSA")
     st.write("Enter a text query to retrieve relevant images from our dataset.")
 
     # If the Flask API is local:
@@ -25,7 +23,7 @@ def main():
                     st.write(f"Path: {item['image_path']}")
                     st.write(f"Similarity: {item['similarity']:.4f}")
                     # Attempt to display the local image
-                    # If the path is accessible from your local dev environment:
+                    # If the path is accessible from the local dev environment:
                     st.image(item["image_path"])
             else:
                 st.error("API Error: " + response.text)
