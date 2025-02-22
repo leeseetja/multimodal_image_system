@@ -57,8 +57,9 @@ multimodal_image_system/
 1. **Clone This Repository**
 
    ```bash
-   git clone https://github.com/YourUsername/multimodal_image_system.git
+   git clone https://github.com//leeseetja/multimodal_image_system.git
    cd multimodal_image_system
+
 
 
 2. **Install Dependencies**
@@ -68,8 +69,22 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 
 
+Make sure you have Python 3.8+ installed. This command installs PyTorch, FAISS, CLIP, Flask, and Streamlit.
+
+3. **Move or Copy Images**
+
+Place/ensure the downloaded images are in /data/images. This folder is ignored by Git, so it won’t be pushed to the repository.
 
 
+## Running the System
+
+Below are the main steps to run the multi-modal retrieval pipeline. Commands assume you’re in the root folder of this project.
+
+1) Generate Embeddings
+python ./scripts/generate_embeddings.py \
+  --image_folder ./data/images \
+  --sample_size 500 \
+  --output_dir ./embeddings
 
 
 
