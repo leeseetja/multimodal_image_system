@@ -133,7 +133,7 @@ python -m pytest --maxfail=1 --disable-warnings -q
 
 ---
 
-## Bonus: Inclusive Design
+## Inclusive Design
 
 To incorporate accessible features for potentially disabled users (e.g., image captioning for visually impaired users):
 * **Captioning Model:** Use a Hugging Face model (like nlpconnect/vit-gpt2-image-captioning) to generate alt-text for each retrieved image.
