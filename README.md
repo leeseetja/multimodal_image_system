@@ -1,6 +1,6 @@
 # Multimodal Image Retrieval System
 
-A **production-ready** case study demonstrating how to:
+A **production-ready** system demonstrating how to:
 1. Generate image embeddings using CLIP  
 2. Index them with FAISS  
 3. Build a Flask API for text-to-image retrieval  
